@@ -1,0 +1,39 @@
+[
+   
+    {
+        "id":1,
+        "nombre":"Divorcio de común acuerdo",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Gestión y redacción de divorcio de común acuerdo. No incluye acuerdos por régimen de tenencia y/o visitas de hijos comunes, animales de compañía, tampoco división de bienes materiales sean muebles o inmuebles.",
+        "imagen":"../assets/divorcio.png",
+        "precio":10000,
+        "cantidad":0
+    },
+    {
+        "id":2,
+        "nombre":"Contratos",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Servicio de redacción, gestión y asesoramiento de contratos de alquiler, compra-venta, cesión de derechos, locación de obra y servicios, permuta, prenda, donación, mutuo, comodato, etc.",
+        "imagen":"../assets/contratos.png",
+        "precio":1000,
+        "cantidad":0
+    },
+    {
+        "id":3,
+        "nombre":"Redacción de testamentos",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Asesoramiento y redacción de testamento, bienes y destino de los mismos. Revisión y/o modificación y/o revocación del testamento vigente y actualización en caso de ser necesario.",
+        "imagen":"../assets/testamento.png",
+        "precio":1500,
+        "cantidad":0
+    },
+    {
+        "id":4,
+        "nombre": "Startups-Redacción de bases y condiciones",
+        "categoria":"",
+        "descripcion":"Estudio de la naturaleza jurídica del emprendimiento, comercialización, sistema de envíos, procesamiento de pagos y público. Solución anticipada de supuestos de conflictos (denuncias y sanciones).",
+        "imagen":"../assets/sociedades.png",
+        "precio":1000,
+        "cantidad":0
+    }
+]
