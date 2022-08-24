@@ -1,3 +1,4 @@
+
 // clase constructora del carrito
 class Carrito {
     constructor(id, productos, precioTotal) {
