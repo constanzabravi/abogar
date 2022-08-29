@@ -156,7 +156,7 @@ const compraConfirmacion = btnComprar.addEventListener("click", () => {
 })
 
 
-
+// DESAFIO DE FETCH 
 // DOM - funcion para generar cards y guardarlas
 const generarTarjetas = async () => {
     const respuesta = await

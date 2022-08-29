@@ -30,10 +30,47 @@
     {
         "id":4,
         "nombre": "Startups-Redacción de bases y condiciones",
-        "categoria":"",
+        "categoria":"Servicio jurídico",
         "descripcion":"Estudio de la naturaleza jurídica del emprendimiento, comercialización, sistema de envíos, procesamiento de pagos y público. Solución anticipada de supuestos de conflictos (denuncias y sanciones).",
+        "imagen":"../assets/startup.png",
+        "precio":1000,
+        "cantidad":0
+    },
+    {
+        "id":5,
+        "nombre": "Administración de Consorcios",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Consultoría, outsourcing y gestión legal descentralizada para los asuntos legales de los edificios o barrios para administradores de consorcio, o empresas dedicadas a dicha labor.",
+        "imagen":"../assets/consorcio.png",
+        "precio":1000,
+        "cantidad":0
+    },
+    {
+        "id":6,
+        "nombre": "Constitui tu sociedad",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Formación o regularización de sociedades en funcionamiento. Cotización a precio final de la contitución de la misma. Redacción y asesoramiento posterior.",
         "imagen":"../assets/sociedades.png",
         "precio":1000,
         "cantidad":0
+    },
+    {
+        "id":7,
+        "nombre": "Demanda/Contestación de demanda",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Redacción, gestión y asesoramiento de demandas y contestaciones de derecho civil y comercial. Seguimiento posterior del caso.",
+        "imagen":"../assets/papel.png",
+        "precio":1000,
+        "cantidad":0
+    },
+    {
+        "id":8,
+        "nombre": "Carta Documento/Telegrama",
+        "categoria":"Servicio jurídico",
+        "descripcion":"Redacción, asesoramiento y gestión de Carta Documento/Contestación o Telegrama que se necesite enviar.",
+        "imagen":"../assets/telegrama.png",
+        "precio":1000,
+        "cantidad":0
     }
+
 ]
