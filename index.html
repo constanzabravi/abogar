@@ -40,8 +40,7 @@
                 <p>Somos un equipo de profesionales inspirados por las nuevas tecnologías y altamente calificados para
                     realizar tareas de cualquier complejidad.<br>Acercamos nuestras soluciones a tus tiempos, sin
                     intermediarios.<br>Confíe sus problemas en nosotros.</p>
-                <button class="colorarrow" type="button" href="">Conózcanos</button>
-                <a href="#arrow-link"><i class="fa fa-long-arrow-down fa-lg" aria-hidden="true"></i></a>
+                <a href="#equipo"><button class="colorarrow" type="button">Conocenos</button></a>
             </div>
         </div>
     </div>
@@ -228,7 +227,7 @@
             </div>
         </div>
     </div>
-    <div class="team-block-container">
+    <div id="equipo" class="team-block-container">
         <div class="h-p-group">
             <h2>Nuestro Equipo</h2>
             <p>Nuestro equipo de abogados, contadores, diseñadores, desarrolladores, investigadores y analistas
@@ -345,7 +344,7 @@
             </div>
         </div>
         <!-- En este form se validan los campos del formulario, a su vez avisa que falta completar información a través de alerts y a su vez reenvia la consulta a una librería para que notifique sobre la misma -->
- 
+
         <div class="contact-form">
             <form action="https://formspree.io/f/xaykepnb" name="formulario" method="POST">
                 <input type="email" name="mail" id="mail" placeholder="Email" maxlength="50">
@@ -393,7 +392,7 @@
         </div>
     </div>
     <!-- En este footer se validan los campos del formulario y a su vez reenvia el valor a una librería para que notifique sobre el correo que se inscribió -->
- 
+
     <footer id="footer">
         <div class="footer-container">
             <div class="footer-form">
@@ -405,21 +404,21 @@
                     <input type="submit" id="botondos" value="Enviar">
                 </form>
                 <script>
-                    (function () {
-                        let formulariodos = document.getElementsByName('formulariodos')[0],
-                            elementos = formulariodos.elements,
-                            boton = document.getElementById('botondos');
-    
-                        let validarEmailuno = function (e) {
-                            if (formulariodos.maildos.value == 0) {
-                                e.preventDefault();
-                                alert("Error: Falta completar campo de 'Correo Electrónico'.")
-    
-                            }
-                        };
-                       
-                        formulariodos.addEventListener('submit', validarEmailuno);
-                    }())
+                        (function () {
+                            let formulariodos = document.getElementsByName('formulariodos')[0],
+                                elementos = formulariodos.elements,
+                                boton = document.getElementById('botondos');
+
+                            let validarEmailuno = function (e) {
+                                if (formulariodos.maildos.value == 0) {
+                                    e.preventDefault();
+                                    alert("Error: Falta completar campo de 'Correo Electrónico'.")
+
+                                }
+                            };
+
+                            formulariodos.addEventListener('submit', validarEmailuno);
+                        }())
                 </script>
             </div>
             <div class="block">
@@ -431,69 +430,65 @@
                 </div>
             </div>
 
- <!-- Servicio de urgencias por violencia de género -->
-            
- <div id='whatsapp-chat' class='hide'>
-    <div class='header-chat'>
-        <div class='head-home'>
-            <h3>Abogar 24/7</h3>
-            <div class='info-avatar'><img
-                    src='https://sistemadecotizaciones.files.wordpress.com/2020/08/supportmale.png' /></div>
-        </div>
-        <div class='get-new'>
-            <div id='get-label'>Servicio al cliente</div>
-            <div id='get-nama'>Estamos para ayudarte</div>
-        </div>
+            <!-- Servicio de urgencias por violencia de género -->
+
+            <div id='whatsapp-chat' class='hide'>
+                <div class='header-chat'>
+                    <div class='head-home'>
+                        <h3>Abogar 24/7</h3>
+                        <div class='info-avatar'><img
+                                src='https://sistemadecotizaciones.files.wordpress.com/2020/08/supportmale.png' /></div>
+                    </div>
+                    <div class='get-new'>
+                        <div id='get-label'>Servicio al cliente</div>
+                        <div id='get-nama'>Estamos para ayudarte</div>
+                    </div>
+                </div>
+                <div class='start-chat'>
+                    <div class='first-msg'><span>¡Hola! ¿En qué te podemos ayudar? Brindamos atención, contención y
+                            asesoramiento en situaciones de violencia de género. Es importante que sepas no se trata de
+                            una línea de emergencia. Para casos de riesgo, comunicate con el 911.</span></div>
+                    <div class='blanter-msg'><textarea id='chat-input' placeholder='Escribe un mensaje' maxlength='120'
+                            row='1'></textarea>
+                        <a href='#' onclick="enviar_mensaje();" id='send-it'>Enviar</a>
+                    </div>
+                </div>
+                <div id='get-number'>2682848193</div><a class='close-chat' onclick="cerrar_chat();" href='#'>×</a>
+            </div>
+            <a class='blantershow-chat' onclick="mostrar_chat();" href='#' title='Show Chat'><svg width="20"
+                    viewBox="0 0 24 24">
+                    <defs />
+                    <path fill="#eceff1"
+                        d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+                    <path fill="#4caf50"
+                        d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+                    <path fill="#fafafa"
+                        d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+                </svg>
+                Chatea con nosotros</a>
+            <script>
+                function enviar_mensaje() {
+                    var a = document.getElementById("chat-input");
+                    if ("" != a.value) {
+                        var b = document.getElementById("get-number").innerHTML, c = document.getElementById("chat-input").value, d = "https://web.whatsapp.com/send", e = b, f = "&text=" + c;
+                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send"; var g = d + "?phone=" + e + f; window.open(g, "_blank");
+                    }
+                }
+                const whatsapp_chat = document.getElementById("whatsapp-chat");
+                function cerrar_chat() {
+                    whatsapp_chat.classList.add("hide");
+                    whatsapp_chat.classList.remove("show");
+
+                }
+                function mostrar_chat() {
+                    whatsapp_chat.classList.add("show");
+                    whatsapp_chat.classList.remove("hide");
+                }
+            </script>
+    </footer>
+    <div id="up-btn">
+        <a href="#up"><i class="fa fa-3x fa-chevron-up" aria-hidden="true"></i></a>
     </div>
-    <div class='start-chat'>
-        <div class='first-msg'><span>¡Hola! ¿En qué te podemos ayudar? Brindamos atención, contención y
-                asesoramiento en situaciones de violencia de género. Es importante que sepas no se trata de
-                una línea de emergencia. Para casos de riesgo, comunicate con el 911.</span></div>
-        <div class='blanter-msg'><textarea id='chat-input' placeholder='Escribe un mensaje' maxlength='120'
-                row='1'></textarea>
-            <a href='#' onclick="enviar_mensaje();" id='send-it'>Enviar</a>
-        </div>
-    </div>
-    <div id='get-number'>2682848193</div><a class='close-chat' onclick="cerrar_chat();" href='#'>×</a>
-</div>
-<a class='blantershow-chat' onclick="mostrar_chat();" href='#' title='Show Chat'><svg width="20"
-        viewBox="0 0 24 24">
-        <defs />
-        <path fill="#eceff1"
-            d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
-        <path fill="#4caf50"
-            d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
-        <path fill="#fafafa"
-            d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
-    </svg>
-    Chatea con nosotros</a>
-<script>
-    function enviar_mensaje() {
-        var a = document.getElementById("chat-input");
-        if ("" != a.value) {
-            var b = document.getElementById("get-number").innerHTML, c = document.getElementById("chat-input").value, d = "https://web.whatsapp.com/send", e = b, f = "&text=" + c;
-            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send"; var g = d + "?phone=" + e + f; window.open(g, "_blank");
-        }
-    }
-    const whatsapp_chat = document.getElementById("whatsapp-chat");
-    function cerrar_chat() {
-        whatsapp_chat.classList.add("hide");
-        whatsapp_chat.classList.remove("show");
-
-    }
-    function mostrar_chat() {
-        whatsapp_chat.classList.add("show");
-        whatsapp_chat.classList.remove("hide");
-    }
-</script>
-</footer>
-<div id="up-btn">
-<a href="#up"><i class="fa fa-3x fa-chevron-up" aria-hidden="true"></i></a>
-</div>
-
-
-    <!-- SCRIPT -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
