@@ -1,77 +1,229 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abogar - Tienda Legal</title>
-  <!-- estilos bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="../styles/style.css">
-
+    <title>Abogar</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="/styles/indexstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iconos de fontawesome y bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- fuente de google -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 </head>
 
-<body class="bodyIndex">
-  <header>
-    <nav class="padding navbar">
-      <a class="navbar-brand" href="../index.html">
-        <img src="../assets/logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
-      </a>
-      <div class="d-flex">
-        <button class="btn btn-outline-light" id="btnCarrito" type="submit" data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop">Ver Carrito <i class="bi bi-cart4"></i></button>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Lista de servicios adquiridos </h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <ul class="list-group list-group-flush" id="listaProdCarrito">
+<body>
+    <div id="up" class="head">
+        <div class="head-container">
+            <header>
+                <div class="logo">
+                    <div>
+                        <a class="navbar-brand" href="../index.html"><img src="/assets/logoa.png" alt="abogar-logo"></a>
+                        <p>ABOGAR</p>
+                    </div>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <br>
 
-                </ul>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" data-bs-dismiss="modal" id="btnComprar" class="btn btn-primary">Comprar</button>
-                <button type="button" class="btn btn-secondary" id="btnEliminar" data-bs-dismiss="modal">Eliminar
-                  productos</button>
-              </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">Lista de servicios adquiridos
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <ul class="list-group list-group-flush" id="listaProdCarrito">
+
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Cerrar</button>
+                                        <button type="button" data-bs-dismiss="modal" id="btnComprar"
+                                            class="btn btn-primary">Comprar</button>
+                                        <button type="button" class="btn btn-secondary" id="btnEliminar"
+                                            data-bs-dismiss="modal">Eliminar
+                                            productos</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="hero">
+                <h1>Tienda Legal</h1>
+                <p>Única consultora jurídica y tecnológica del mundo<br>que te acerca sus productos virtualmente,<br>sin necesidad de trasladarte</p>
+                <button class= "colorarrow" type="button">Empecemos</button>
+                <a href="#arrow-link"><i class="colorarrow fa fa-arrow-down fa-4x" aria-hidden="true"></i></a>
             </div>
-          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="primeraSection">
-      <h1 class="h1">SERVICIOS JURIDICOS</h1>
-      <div id="tarjeta" class="row row-cols-1 row-cols-md-3 g-4">
-      </div>
+    </div>
+    <section>
+        <div class="portfolio-container" id="arrow-link">
+            <div class="h-p-group">
+                <h2>Productos</h2>
+                <p>Contamos con una amplia variedad de productos jurídicos y de desarrollo web.</p>
+            </div>
+            <article><button type="button" id="btnCarrito" type="submit" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">VER CARRITO <br> <i class="bi bi-cart4"></i></button>
+        </article>
+            <div id="tarjeta" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </div>
     </section>
-  </main>
-  <footer>
-  </footer>
+    <div class="services-container">
+    </div>
+    <div class="team-block-container">
+        <div class="feedback-container">
+            <div class="h-p-group">
+                <h2>Mantengase en contacto con nosotros</h2>
+                <p>Disponible 24/7 a través de correo electrónico y teléfono. Ven y visítanos en nuestra oficina de
+                    lunes a
+                    viernes,<br>
+                    9 am - 9 pm</p>
+            </div>
+            <div class="contacts-container">
+                <div class="contacts-block left-b">
+                    <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                    <h4>Dirección</h4>
+                    <address>123, Avenida Godoy Cruz<br>Mendoza</address>
+                </div>
+                <div class="contacts-block center-b">
+                    <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                    <h4>Email</h4>
+                    <a href="mailto:contacto@abogar.com">contacto@abogar.com</a>
+                </div>
+                <div class="contacts-block right-b">
+                    <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+                    <h4>Teléfono</h4>
+                    <a href="tel:+5492613434331">+54 9 2613434331</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- En este footer se validan los campos del formulario y a su vez reenvia el valor a una librería para que notifique sobre el correo que se inscribió -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-form">
+                <h2>Suscríbase a nuestro boletín</h2>
+                <p>Enviamos artículos, jurisprudencia y novedades de interés general.<br>No es spam ni publicidad, lo
+                    prometemos ;)</p>
+                <form action="https://formspree.io/f/moqberbp" method="POST" id="formulariodos" name="formulariodos">
+                    <input type="email" name="maildos" id="maildos" placeholder="Escriba su correo electrónico">
+                    <input type="submit" id="botondos" value="Enviar">
+                </form>
+                <script>
+                    (function () {
+                        let formulariodos = document.getElementsByName('formulariodos')[0],
+                            elementos = formulariodos.elements,
+                            boton = document.getElementById('botondos');
+    
+                        let validarEmailuno = function (e) {
+                            if (formulariodos.maildos.value == 0) {
+                                e.preventDefault();
+                                alert("Error: Falta completar campo de 'Correo Electrónico'.")
+    
+                            }
+                        };
+                       
+                        formulariodos.addEventListener('submit', validarEmailuno);
+                    }())
+                </script>
+                </form>
+            </div>
+            <div class="block">
+                <div class="footer-contacts">
+                    <h5>MENDOZA</h5>
+                    <address>123, Avenida Godoy Cruz<br>Provincia de Mendoza</address>
+                    <a href="mailto:contacto@abogar.com">contacto@abogar.com</a>
+                    <a href="tel:+5492613434331">+54 9 2613434331</a>
+                </div>
+            </div>
 
-  <!-- javascript bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
-    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
-    crossorigin="anonymous"></script>
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="../js/app.js"></script>
+            <!-- Servicio de urgencias por violencia de género -->
+            
+            <div id='whatsapp-chat' class='hide'>
+                <div class='header-chat'>
+                    <div class='head-home'>
+                        <h3>Abogar 24/7</h3>
+                        <div class='info-avatar'><img
+                                src='https://sistemadecotizaciones.files.wordpress.com/2020/08/supportmale.png' /></div>
+                    </div>
+                    <div class='get-new'>
+                        <div id='get-label'>Servicio al cliente</div>
+                        <div id='get-nama'>Estamos para ayudarte</div>
+                    </div>
+                </div>
+                <div class='start-chat'>
+                    <div class='first-msg'><span>¡Hola! ¿En qué te podemos ayudar? Brindamos atención, contención y
+                            asesoramiento en situaciones de violencia de género. Es importante que sepas no se trata de
+                            una línea de emergencia. Para casos de riesgo, comunicate con el 911.</span></div>
+                    <div class='blanter-msg'><textarea id='chat-input' placeholder='Escribe un mensaje' maxlength='120'
+                            row='1'></textarea>
+                        <a href='#' onclick="enviar_mensaje();" id='send-it'>Enviar</a>
+                    </div>
+                </div>
+                <div id='get-number'>2682848193</div><a class='close-chat' onclick="cerrar_chat();" href='#'>×</a>
+            </div>
+            <a class='blantershow-chat' onclick="mostrar_chat();" href='#' title='Show Chat'><svg width="20"
+                    viewBox="0 0 24 24">
+                    <defs />
+                    <path fill="#eceff1"
+                        d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+                    <path fill="#4caf50"
+                        d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+                    <path fill="#fafafa"
+                        d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+                </svg>
+                Chatea con nosotros</a>
+            <script>
+                function enviar_mensaje() {
+                    var a = document.getElementById("chat-input");
+                    if ("" != a.value) {
+                        var b = document.getElementById("get-number").innerHTML, c = document.getElementById("chat-input").value, d = "https://web.whatsapp.com/send", e = b, f = "&text=" + c;
+                        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send"; var g = d + "?phone=" + e + f; window.open(g, "_blank");
+                    }
+                }
+                const whatsapp_chat = document.getElementById("whatsapp-chat");
+                function cerrar_chat() {
+                    whatsapp_chat.classList.add("hide");
+                    whatsapp_chat.classList.remove("show");
+
+                }
+                function mostrar_chat() {
+                    whatsapp_chat.classList.add("show");
+                    whatsapp_chat.classList.remove("hide");
+                }
+            </script>
+    </footer>
+    <div id="up-btn">
+        <a href="#up"><i class="fa fa-3x fa-chevron-up" aria-hidden="true"></i></a>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

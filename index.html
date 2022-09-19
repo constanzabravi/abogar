@@ -1,96 +1,499 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abogar</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles/indexstyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abogar - Inicio</title>
-    <!-- estilos bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <!-- iconos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/03c8ad3952.js" crossorigin="anonymous"></script>
+    <!-- fuente de google -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
 </head>
 
-<body class="bodyIndex">
-    <header>
-        <nav class="padding navbar">
-            <a class="navbar-brand" href="#"> <img src="./assets/logo.png" width="100" height="100"
-                    class="d-inline-block align-top" alt=""></a>
-            <div class="d-flex">
-                <button class="btn btn-outline-light"><a href="pags/tienda.html">Servicios</a></button>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="primeraSection">
-            <div>
-                <h1 class="h1">LA NUEVA ERA <br>
-                    DE LOS SERVICIOS <br>
-                    LEGALES</h1>
-            </div>
-            <div>
-                <img src="./assets/equipo.png" width="600" height="400" alt="">
-            </div>
-        </section>
-        <section class="backgroundWhite">
-            <h2 class="h2">
-                Una solución completa para vender tus servicios jurídicos
-            </h2>
-            <div class="container text-center">
-                <div class="row justify-content-around">
-                    <div class="col-4">
-                        <div class="card">
-                            <img class="card-img-top" src="./assets/card1.png" width="250" height="170"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Tienda Legal innovadora</h5>
-                                <p class="card-text">Vende más tus servicios jurídicos y promociona tu estudio de la
-                                    mejor
-                                    manera ofreciendo galerías de última generación, experiencias de compra optimizadas
-                                    y un
-                                    conjunto de aplicaciones profesionales de comercio electrónico único en la
-                                    industria.
-                                </p>
-                            </div>
-                        </div>
+<body>
+    <div id="up" class="head">
+        <div class="head-container">
+            <header>
+                <div class="logo">
+                    <div>
+                        <a href=""><img src="/assets/logoa.png" alt="abogar-logo"></a>
+                        <p>ABOGAR</p>
                     </div>
-                    <div class="col-4">
-                        <div class="card">
-                            <img class="card-img-top" src="./assets/mediosdepago.png" width="250" height="170"
-                                alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Soluciones de pago avanzadas</h5>
-                                <p class="card-text">Ofrécele a los clientes un desembolso totalmente seguro y maneja
-                                    fácilmente
-                                    las transacciones comerciales. Obtén tarifas competitivas para procesar pagos y una
-                                    gran
-                                    cantidad de proveedores especializados.</p>
-                            </div>
-                        </div>
+                    <div class="socials">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                        </ul>
+                        <br>
+                        <a href="./pags/tienda.html">
+                            <button type="button">TIENDA LEGAL</button>
+                        </a>
                     </div>
                 </div>
+            </header>
+            <div class="hero">
+                <h1>La nueva era de los servicios legales</h1>
+                <p>Somos un equipo de profesionales inspirados por las nuevas tecnologías y altamente calificados para
+                    realizar tareas de cualquier complejidad.<br>Acercamos nuestras soluciones a tus tiempos, sin
+                    intermediarios.<br>Confíe sus problemas en nosotros.</p>
+                <button class="colorarrow" type="button" href="">Conózcanos</button>
+                <a href="#arrow-link"><i class="fa fa-long-arrow-down fa-lg" aria-hidden="true"></i></a>
             </div>
-        </section>
+        </div>
+    </div>
+    <div id="arrow-link" class="services-container">
+        <div class="h-p-group">
+            <h2>Nuestros servicios</h2>
+            <p>Dependiendo de las necesidades de su negocio, siempre estamos listos para ofrecerle la mejor solución.
+                Nuestro equipo analizará su consulta personalizada para buscar las ideas y servicios que podrían ser
+                ideales para usted, o bien, podrá adquirirla usted mismo a través de nuestra tienda legal.</p>
+        </div>
+        <div class="services-block">
+            <div class="services-block-box marg-left">
+                <i class="fa-solid fa-cart-shopping fa-3x" aria-hidden="true"></i>
+                <h3>Tienda legal</h3>
+                <p>Poseemos una tienda virtual,<br>a diferencia de los estudios tradicionales.<br>Obtenes tu servicio el
+                    90%<br>
+                    más rápido.</p>
+            </div>
+            <div class="services-block-box">
+                <i class="fa-solid fa-money-check-dollar fa-3x" aria-hidden="true"></i>
+                <h3>Pago avanzado</h3>
+                <p>Poseemos diversos medios de pago<br>para que abones de cualquier forma<br>Efectivo, Tarjetas de
+                    débito, crédito,<br>
+                    ETH, BTC, ADA, etc.</p>
+            </div>
+            <div class="services-block-box">
+                <i class="fa-solid fa-percent fa-3x" aria-hidden="true"></i>
+                <h3>Menor costo</h3>
+                <p>Te ahorramos trasladarte a nuestras oficinas.<br>Te ofrecemos 50% de descuento<br>en nuestros
+                    servicios si los adquiris<br>
+                    por este medio.</p>
+            </div>
+            <div class="services-block-box marg-top marg-left">
+                <i class="fa-solid fa-lock fa-3x" aria-hidden="true"></i>
+                <h3>Normas ISO</h3>
+                <p>Cuidamos a nuestros clientes y a su información,<br>por eso tenemos certificación en<br>Normas ISO
+                    27.000<br>
+                    para que estés más seguro.</p>
+            </div>
+            <div class="services-block-box marg-top">
+                <i class="fa-solid fa-phone-flip fa-3x" aria-hidden="true"></i>
+                <h3>Contacto 24/7</h3>
+                <p>Poseemos diversos canales<br>de comunicación.<br>Podes comunicarte al 2613434331,
+                    contacto@abogar.com<br>
+                    o a nuestro chat de What's App</p>
+            </div>
+            <div class="services-block-box marg-top">
+                <i class="fa-solid fa-rotate fa-3x" aria-hidden="true"></i>
+                <h3>Conformidad</h3>
+                <p>Si te arrepentiste, <br>o no estás conforme con<br>nuestros servicios o con nuestra
+                    atención<br>Tranquil@, no hay problema,<br>
+                    te devolvemos tu dinero :)</p>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-container">
+        <div class="h-p-group">
+            <h2>Productos</h2>
+            <p>Contamos con una amplia variedad de productos jurídicos y de desarrollo web.</p>
+        </div>
+        <div class="portfolio-block">
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/familia.png" alt="portfolio-image1.png"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Derecho de familia</h3>
+                <p>Divorcios / Alimentos / Sucesiones / Testamentos</p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/dcontratos.png" alt="portfolio-image2.png"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Derecho Contractual</h3>
+                <p>Alquiler / Compra-venta / Cesión de derechos / Obra y servicios / Permuta / Prenda / Donación / Mutuo
+                    / Comodato</p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/desarrollo.png" alt="portfolio-image3.png"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Desarrollo Web HTML, CSS & JavaScript</h3>
+                <p>Página web de tu estudio / Constitución de Startup</p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/diseños.png" alt="portfolio-image4.png" height="220"
+                                width="220"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Varios diseños</h3>
+                <p>Página web estática / Tienda legal</p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/dsociedades.png" alt="2row-portfolio-image1.png"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Derecho Societario</h3>
+                <p>Constitución / Asesoramiento de sociedades </p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/civil.png" alt="2row-portfolio-image2.png"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Derecho Civil<cch3>
+                        <p>Demanda y contestación / Análisis del caso</p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/dlaboral.png" alt="2row-portfolio-image3.png"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Derecho Laboral</h3>
+                <p>Carta documento / Telegrama</p>
+            </div>
+            <div class="positioning-container">
+                <div class="img-icon-container">
+                    <div class="row-img">
+                        <a href="#"><img src="/assets/ddaños.png" alt="22row-portfolio-image4.png" height="220"
+                                width="220"></a>
+                    </div>
+                    <div class="row-1icon">
+                        <i class="fa fa-eye" aria-hidden="true"></i>
+                    </div>
+                    <div class="row-2icon">
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h3>Derecho de Daños</h3>
+                <p>Responsabilidad / Daños Generales</p>
+            </div>
+        </div>
+    </div>
+    <div class="team-block-container">
+        <div class="h-p-group">
+            <h2>Nuestro Equipo</h2>
+            <p>Nuestro equipo de abogados, contadores, diseñadores, desarrolladores, investigadores y analistas
+                calificado pueden convertir sus deseos
+                en herramientas efectivas que harán que su negocio sea mejor, más grande y más exitoso.</p>
+        </div>
+        <div class="team-block">
+            <img src="/assets/bravi.png" alt="pic1-of-team-member.png">
+            <h4>Constanza Bravi</h4>
+            <h5>Abogada y Desarrolladora Web</h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="team-block">
+            <img src="/assets/juandoe.png" alt="pic2-of-team-member.png">
+            <h4>John Doe</h4>
+            <h5>UI Designer</h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="team-block">
+            <img src="/assets/marta.png" alt="pic3-of-team-member.png">
+            <h4>Marta Doe</h4>
+            <h5>Abogada</h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="team-block">
+            <img src="/assets/franco.png" alt="pic4-of-team-member.png">
+            <h4>Francisco Doe</h4>
+            <h5>UI Designer</h5>
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="data-container">
+        <div class="h-p-group">
+            <h2>Estadísticas y testimonios</h2>
+            <p>Mejoramos los negocios de nuestros clientes, logramos <br>los objetivos propuestos y alcanzamos nuevas
+                metas.</p>
+        </div>
+        <div class="stats-container">
+            <div class="stats-block">
+                <i class="fa fa-puzzle-piece fa-3x" aria-hidden="true"></i>
+                <h4>10</h4>
+                <h5>Productos de Calidad</h5>
+            </div>
+            <div class="stats-block">
+                <i class="fa fa-cloud-download fa-3x" aria-hidden="true"></i>
+                <h4>10.000</h4>
+                <h5>Casos Nuevos</h5>
+            </div>
+            <div class="stats-block">
+                <i class="fa fa-users fa-3x" aria-hidden="true"></i>
+                <h4>1200</h4>
+                <h5>Clientes</h5>
+            </div>
+            <div class="stats-block">
+                <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
+                <h4>900</h4>
+                <h5>Likes</h5>
+            </div>
+        </div>
+        <div>
+            <div class="customer-info">
+                <h4>John Doe</h4>
+                <h5>Mercadoliberado</h5>
+            </div>
+            <div class="customer-quote">
+                <i class="fa fa-quote-left fa-lg" aria-hidden="true"></i>
+                <blockquote>Conocí diversos estudios jurídicos y consultoras, pero después de haber conocido a ABOGAR,
+                    indudablemente los elijo a ellos para confiarle todos mis problemas jurídicos y emprendimientos.
+                    Mejoraron mis estadísticas,
+                    solucionaron en poco tiempo mis dudas y de la mejor manera. ¡Los recomendaría cada vez que alguien
+                    me consulte!</blockquote>
+                <i class="fa fa-quote-right fa-lg" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="feedback-container">
+        <div class="h-p-group">
+            <h2>Mantengase en contacto con nosotros</h2>
+            <p>Disponible 24/7 a través de correo electrónico y teléfono. Ven y visítanos en nuestra oficina de lunes a
+                viernes,<br>
+                9 am - 9 pm</p>
+        </div>
+        <div class="contacts-container">
+            <div class="contacts-block left-b">
+                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                <h4>Dirección</h4>
+                <address>123, Avenida Godoy Cruz<br>Mendoza</address>
+            </div>
+            <div class="contacts-block center-b">
+                <i class="fa fa-envelope fa-lg" aria-hidden="true"></i>
+                <h4>Email</h4>
+                <a href="mailto:contacto@abogar.com">contacto@abogar.com</a>
+            </div>
+            <div class="contacts-block right-b">
+                <i class="fa fa-phone-square fa-lg" aria-hidden="true"></i>
+                <h4>Teléfono</h4>
+                <a href="tel:+5492613434331">+54 9 2613434331</a>
+            </div>
+        </div>
+        <!-- En este form se validan los campos del formulario, a su vez avisa que falta completar información a través de alerts y a su vez reenvia la consulta a una librería para que notifique sobre la misma -->
+ 
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xaykepnb" name="formulario" method="POST">
+                <input type="email" name="mail" id="mail" placeholder="Email" maxlength="50">
+                <input type="text" name="name" id="name" placeholder="Nombre y Apellido" maxlength="120">
+                <div class="textarea-positioning"><textarea name="textarea" id="consulta" maxlength="2500" rows="10"
+                        cols="20" placeholder="Consulta"></textarea></div>
+                <input type="submit" id="boton" name="btn" value="Enviar Consulta" required>
+            </form>
+            <script>
+                (function () {
+                    let formulario = document.getElementsByName('formulario')[0],
+                        elementos = formulario.elements,
+                        boton = document.getElementById('boton');
 
-    </main>
-    <footer>
-        <p></p>
-    </footer>
-    <!--   <footer class="container">
+                    let validarEmail = function (e) {
+                        if (formulario.mail.value == 0) {
+                            e.preventDefault();
+                            alert("Error: Falta completar campo de 'Email'.")
 
-    </footer> -->
-    <!-- javascript bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+                        }
+                    }
+                    let validarNombre = function (e) {
+                        if (formulario.name.value == 0) {
+                            e.preventDefault();
+                            alert("Error: Falta completar campo de 'Nombre y Apellido'.")
+
+                        }
+                    }
+                    let validarConsulta = function (e) {
+                        if (formulario.consulta.value == 0) {
+                            e.preventDefault();
+                            alert("Error: Falta completar campo de 'Consulta'.")
+
+                        }
+                    };
+                    let validar = function (e) {
+                        validarEmail(e);
+                        validarNombre(e);
+                        validarConsulta(e);
+                    };
+
+                    formulario.addEventListener('submit', validar);
+                }())
+            </script>
+        </div>
+    </div>
+    <!-- En este footer se validan los campos del formulario y a su vez reenvia el valor a una librería para que notifique sobre el correo que se inscribió -->
+ 
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-form">
+                <h2>Suscríbase a nuestro boletín</h2>
+                <p>Enviamos artículos, jurisprudencia y novedades de interés general.<br>No es spam ni publicidad, lo
+                    prometemos ;)</p>
+                <form action="https://formspree.io/f/moqberbp" method="POST" id="formulariodos" name="formulariodos">
+                    <input type="email" name="maildos" id="maildos" placeholder="Escriba su correo electrónico">
+                    <input type="submit" id="botondos" value="Enviar">
+                </form>
+                <script>
+                    (function () {
+                        let formulariodos = document.getElementsByName('formulariodos')[0],
+                            elementos = formulariodos.elements,
+                            boton = document.getElementById('botondos');
+    
+                        let validarEmailuno = function (e) {
+                            if (formulariodos.maildos.value == 0) {
+                                e.preventDefault();
+                                alert("Error: Falta completar campo de 'Correo Electrónico'.")
+    
+                            }
+                        };
+                       
+                        formulariodos.addEventListener('submit', validarEmailuno);
+                    }())
+                </script>
+            </div>
+            <div class="block">
+                <div class="footer-contacts">
+                    <h5>MENDOZA</h5>
+                    <address>123, Avenida Godoy Cruz<br>Provincia de Mendoza</address>
+                    <a href="mailto:contacto@abogar.com">contacto@abogar.com</a>
+                    <a href="tel:+5492613434331">+54 9 2613434331</a>
+                </div>
+            </div>
+
+ <!-- Servicio de urgencias por violencia de género -->
+            
+ <div id='whatsapp-chat' class='hide'>
+    <div class='header-chat'>
+        <div class='head-home'>
+            <h3>Abogar 24/7</h3>
+            <div class='info-avatar'><img
+                    src='https://sistemadecotizaciones.files.wordpress.com/2020/08/supportmale.png' /></div>
+        </div>
+        <div class='get-new'>
+            <div id='get-label'>Servicio al cliente</div>
+            <div id='get-nama'>Estamos para ayudarte</div>
+        </div>
+    </div>
+    <div class='start-chat'>
+        <div class='first-msg'><span>¡Hola! ¿En qué te podemos ayudar? Brindamos atención, contención y
+                asesoramiento en situaciones de violencia de género. Es importante que sepas no se trata de
+                una línea de emergencia. Para casos de riesgo, comunicate con el 911.</span></div>
+        <div class='blanter-msg'><textarea id='chat-input' placeholder='Escribe un mensaje' maxlength='120'
+                row='1'></textarea>
+            <a href='#' onclick="enviar_mensaje();" id='send-it'>Enviar</a>
+        </div>
+    </div>
+    <div id='get-number'>2682848193</div><a class='close-chat' onclick="cerrar_chat();" href='#'>×</a>
+</div>
+<a class='blantershow-chat' onclick="mostrar_chat();" href='#' title='Show Chat'><svg width="20"
+        viewBox="0 0 24 24">
+        <defs />
+        <path fill="#eceff1"
+            d="M20.5 3.4A12.1 12.1 0 0012 0 12 12 0 001.7 17.8L0 24l6.3-1.7c2.8 1.5 5 1.4 5.8 1.5a12 12 0 008.4-20.3z" />
+        <path fill="#4caf50"
+            d="M12 21.8c-3.1 0-5.2-1.6-5.4-1.6l-3.7 1 1-3.7-.3-.4A9.9 9.9 0 012.1 12a10 10 0 0117-7 9.9 9.9 0 01-7 16.9z" />
+        <path fill="#fafafa"
+            d="M17.5 14.3c-.3 0-1.8-.8-2-.9-.7-.2-.5 0-1.7 1.3-.1.2-.3.2-.6.1s-1.3-.5-2.4-1.5a9 9 0 01-1.7-2c-.3-.6.4-.6 1-1.7l-.1-.5-1-2.2c-.2-.6-.4-.5-.6-.5-.6 0-1 0-1.4.3-1.6 1.8-1.2 3.6.2 5.6 2.7 3.5 4.2 4.2 6.8 5 .7.3 1.4.3 1.9.2.6 0 1.7-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.3-.6-.4z" />
+    </svg>
+    Chatea con nosotros</a>
+<script>
+    function enviar_mensaje() {
+        var a = document.getElementById("chat-input");
+        if ("" != a.value) {
+            var b = document.getElementById("get-number").innerHTML, c = document.getElementById("chat-input").value, d = "https://web.whatsapp.com/send", e = b, f = "&text=" + c;
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) var d = "whatsapp://send"; var g = d + "?phone=" + e + f; window.open(g, "_blank");
+        }
+    }
+    const whatsapp_chat = document.getElementById("whatsapp-chat");
+    function cerrar_chat() {
+        whatsapp_chat.classList.add("hide");
+        whatsapp_chat.classList.remove("show");
+
+    }
+    function mostrar_chat() {
+        whatsapp_chat.classList.add("show");
+        whatsapp_chat.classList.remove("hide");
+    }
+</script>
+</footer>
+<div id="up-btn">
+<a href="#up"><i class="fa fa-3x fa-chevron-up" aria-hidden="true"></i></a>
+</div>
+
+
+    <!-- SCRIPT -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -164,7 +164,8 @@ const generarTarjetas = async () => {
     const data = await respuesta.json()
     data.forEach(element => {
         const div = document.createElement('div');
-        div.innerHTML = `<div class="card h-100 col">
+        div.innerHTML = `
+        <div class="card h-100 w-100 col bg-dark border-secondary text-white">
            <div class="d-flex justify-content-between card-body card_precio">
                <div >
                    <label id="${element.id}-precio" class=" card_precioColor">$${element.precio}</label>
@@ -179,7 +180,7 @@ const generarTarjetas = async () => {
                  <input type="number" id="${element.id}-cantidad" min="1" step="1" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
                </div>
                <div class="col-sm">
-                   <button type="submit" id="${element.id}" name="btnAgregar"  class="btn btn-dark">Agregar</button>
+                   <button type="submit" id="${element.id}" name="btnAgregar"  class="btn btn-light">Agregar</button>
                </div>
              </div>
            </div>
