@@ -992,7 +992,11 @@ footer {
     font-size: 30px;
   }
 
+  blockquote {
+    height: 100px;
+  }
 
+}
 
 /* for max-width 599px */
 @media screen and (max-width: 599px) {
@@ -1515,5 +1519,4 @@ a.close-chat {
   animation-duration: 1.5s;
   transform: scale(1);
   opacity: 1;
-}
 }
