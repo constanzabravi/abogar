@@ -958,7 +958,7 @@ footer {
 
 /* #MEDIA QUARIES */
 
-/* max-width 348px */
+/* max-width 400px */
 @media screen and (max-width: 400px) {
   .stats-block {
     width: 25%;
@@ -979,9 +979,10 @@ footer {
   }
 
   .logo img {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     float: left;
+    margin-left: 15px;
   }
 
   .logo p {
@@ -1179,9 +1180,13 @@ footer {
   }
 
   .logo {
-    margin-left: 50px;
+    margin-left: 20px;
   }
 
+  .logo img {
+
+    margin-left: 5px;
+  }
   .socials {
     margin-right: 50px;
   }
