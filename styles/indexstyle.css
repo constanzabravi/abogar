@@ -1,7 +1,8 @@
 body {
-  margin:8px !important;
+  margin: 8px !important;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
 ul {
   list-style-type: none;
 }
@@ -79,7 +80,10 @@ address {
   width: 940px;
   margin: 0 auto;
 }
-*, ::after, ::before {
+
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -233,9 +237,9 @@ header {
 }
 
 .services-block-box i {
-display: inline-block;
-margin: 15px;
-justify-content: left;
+  display: inline-block;
+  margin: 15px;
+  justify-content: left;
 }
 
 .services-block-box p {
@@ -951,563 +955,564 @@ footer {
 #up-btn:hover {
   display: block;
 }
-  /* #MEDIA QUARIES */
 
-  /* max-width 348px */
-  @media screen and (max-width: 348px) {
-    .stats-block {
-      width: 25%;
-      margin: 0 auto 40px auto;
-    }
+/* #MEDIA QUARIES */
 
-    .stats-block .fa-thumbs-up {
-      margin: 0 auto;
-    }
-
-    .logo {
-      display: none;
-      margin-right: 8px 8px;
-    }
-
-    .logo a {
-      display: inline-block;
-    }
-
-    .logo img {
-      height: 100px;
-      width: 100px;
-      float: left;
-    }
-
-    .logo p {
-      float: inline-start;
-      margin: 10px 0 0 0;
-      font-family: 'Source Sans Pro', sans-serif;
-      font-weight: 700;
-      font-size: 30px;
-    }
-
+/* max-width 348px */
+@media screen and (max-width: 400px) {
+  .stats-block {
+    width: 25%;
+    margin: 0 auto 40px auto;
   }
 
-  /* for max-width 599px */
-  @media screen and (max-width: 599px) {
-    .head {
-      width: 100%;
-      background-image: url("/assets/fondo.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .head-container {
-      width: 100%;
-    }
-
-    .logo {
-      display: flex;
-      margin-left: 20px;
-    }
-
-    .socials {
-      margin-right: 20px;
-    }
-
-    .socials ul li {
-      margin: auto;
-    }
-
-    .hero {
-      width: 100%;
-    }
-
-    .hero h1 {
-      color: #000000;
-    }
-
-    .hero a {
-      display: none;
-    }
-
-    .services-container {
-      width: 100%;
-    }
-
-    .services-block-box {
-      width: 60%;
-      margin: 0 auto 70px auto;
-    }
-
-    .services-block-box h3,
-    .serxices-block-box p {
-      display: block;
-    }
-
-    .services-block-box .fa-code {
-      margin-right: 25px;
-    }
-
-    .price-block {
-      margin-bottom: 90px;
-    }
-
-    .positioning-container {
-      margin: 0 auto 40px auto;
-    }
-
-    .team-block {
-      margin: 0 auto 60px auto;
-      border-bottom: 1px solid #696969;
-    }
-
-    .stats-container,
-    .customer-info,
-    .feedback-container,
-    .contacts-container,
-    .contacts-block,
-    .contact-form,
-    .footer,
-    .footer-container,
-    .textarea-positioning textarea,
-    .footer-form,
-    .footer-form form,
-    .footer-form form input[type="email"],
-    .footer-contacts,
-    .portfolio-container,
-    .team-block-container,
-    .price-block,
-    .pricing-container,
-    .data-container {
-      width: 100%;
-    }
-
-    .customer-quote,
-    .positioning-container,
-    .team-block {
-      width: 80%;
-    }
-
-    .contact-form input[type="email"],
-    .contact-form input[type="text"],
-    .contact-form input[type="submit"],
-    .contact-form input[type="checkbox"],
-    .textarea-positioning,
-    .contact-form form {
-      width: 85%;
-    }
-
-    .footer-form {
-      margin-bottom: 15px;
-      margin-bottom: 50px;
-    }
-
-    .footer-form form input[type="email"] {
-      margin-bottom: 10px;
-    }
-
-    .footer-form form input[type="email"],
-    .footer-form form input[type="submit"],
-    .contacts-block,
-    .footer-contacts,
-    .footer-nav,
-    .services-block-box,
-    .positioning-container,
-    .team-block {
-      display: block;
-    }
-
-    .footer-form form input[type="submit"] {
-      width: 50%;
-      margin: 0 auto;
-      float: none;
-    }
-
-    .footer-contacts {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .footer-nav {
-      width: 96%;
-    }
-
-    .footer-nav ul {
-      width: 24%;
-      float: left;
-      height: auto;
-    }
-
-    .footer-nav ul li {
-      text-align: center;
-    }
-
-    .copyright p:first-child {
-      display: inline-block;
-      margin: 0 0 0 10px;
-    }
-
-    #up-btn {
-      left: 80%;
-      bottom: 40%;
-    }
+  .stats-block .fa-thumbs-up {
+    margin: 0 auto;
   }
 
-
-  /* for max-width 920px */
-  @media screen and (min-width: 600px) and (max-width: 950px) {
-    .head {
-      width: 100%;
-      background-image: url(/assets/fondo.png);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .head-container {
-      width: 100%;
-    }
-
-    .logo {
-      margin-left: 50px;
-    }
-
-    .socials {
-      margin-right: 50px;
-    }
-
-    .hero,
-    .services-container {
-      width: 100%;
-    }
-
-    .hero h1 {
-      color: #000000;
-    }
-
-    .services-block-box {
-      width: 48%;
-      display: inline-block;
-      margin: 0 auto 70px auto;
-      padding-left: 80px;
-      box-sizing: border-box;
-    }
-
-    .services-block-box .fa {
-      display: block;
-    }
-
-    .services-block-box h3,
-    .services-block-box p {
-      display: block;
-    }
-
-    .services-block-box .fa-code {
-      margin-right: 25px;
-    }
-
-    .pricing-container,
-    .portfolio-container,
-    .team-block-container,
-    .data-container,
-    .stats-container,
-    .customer-info,
-    .feedback-container,
-    .contacts-container,
-    .contact-form,
-    .textarea-positioning textarea,
-    footer,
-    .footer-container,
-    .footer-form,
-    .footer-form form,
-    .footer-form form input[type="email"],
-    .footer-contacts {
-      width: 100%;
-    }
-
-    .positioning-container,
-    .team-block {
-      width: 48%;
-      display: inline-block;
-    }
-
-    .customer-quote {
-      width: 80%;
-    }
-
-    .contact-form input[type="email"],
-    .contact-form input[type="text"],
-    .contact-form input[type="submit"],
-    .contact-form input[type="checkbox"],
-    .contact-form form,
-    .textarea-positioning {
-      width: 85%;
-    }
-
-    .footer-form {
-      margin-bottom: 15px;
-      margin-bottom: 50px;
-    }
-
-    .footer-form form input[type="email"] {
-      margin-bottom: 10px;
-    }
-
-    .footer-form form input[type="email"],
-    .footer-form form input[type="submit"] {
-      display: block;
-    }
-
-    .footer-form form input[type="submit"] {
-      width: 40%;
-      margin: 0 auto;
-      float: none;
-    }
-
-    .footer-contacts {
-      display: block;
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    .footer-nav {
-      display: block;
-      width: 55%;
-      margin: 0 auto;
-      float: none;
-    }
-
-    .footer-nav ul {
-      width: 24%;
-      float: left;
-      height: auto;
-    }
-
-    .footer-nav ul li {
-      text-align: center;
-    }
-
-    .copyright p:first-child {
-      display: inline-block;
-      margin: 0 0 0 10px;
-    }
-
-    #up-btn {
-      left: 80%;
-      bottom: 40%;
-    }
+  .logo {
+    display: none;
+    margin-right: 8px 8px;
   }
 
-  /* CLASES DE CARDS */
-
-  .card_img {
-    width: 90%;
-    align-self: center;
-    padding-top: 1%;
-  }
-
-  .card_precio {
-    padding-top: 5%;
-  }
-
-  .card_precioColor {
-    background-color: white;
-    color: black;
-    font-weight: 700;
+  .logo a {
     display: inline-block;
-    font-weight: bolder;
-    line-height: 1.5;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
   }
 
-  /* ESTILOS DE WHATS APP */
-
-  #whatsapp-chat {
-    position: fixed;
-    background: #fff;
-    width: 350px;
-    border-radius: 10px;
-    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
-    bottom: 90px;
-    right: 30px;
-    overflow: hidden;
-    z-index: 99;
-    animation-name: showchat;
-    animation-duration: 1s;
-    transform: scale(1);
-  }
-
-  a.blantershow-chat {
-    background: #fff;
-    color: #404040;
-    position: fixed;
-    display: flex;
-    font-weight: 400;
-    justify-content: space-between;
-    z-index: 98;
-    bottom: 25px;
-    right: 30px;
-    font-size: 15px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
-  }
-
-  a.blantershow-chat svg {
-    transform: scale(1.2);
-    margin: 0 10px 0 0;
-  }
-
-  .header-chat {
-    background: #095e54;
-    color: #fff;
-    padding: 20px;
-  }
-
-  .header-chat h3 {
-    margin: 0 0 10px;
-  }
-
-  .header-chat p {
-    font-size: 14px;
-    line-height: 1.7;
-    margin: 0;
-  }
-
-  .info-avatar {
-    position: relative;
-  }
-
-  .info-avatar img {
-    border-radius: 100%;
-    width: 50px;
+  .logo img {
+    height: 100px;
+    width: 100px;
     float: left;
-    margin: 0 10px 0 0;
   }
 
-  .info-chat span {
-    display: block;
-  }
-
-  #get-label,
-  span.chat-label {
-    font-size: 12px;
-    color: #888;
-  }
-
-  #get-nama,
-  span.chat-nama {
-    margin: 5px 0 0;
-    font-size: 15px;
-    font-weight: 700;
-    color: #222;
-  }
-
-  #get-label,
-  #get-nama {
-    color: #fff;
-  }
-
-  span.my-number {
-    display: none;
-  }
-
-  .blanter-msg {
-    color: #444;
-    padding: 20px;
-    font-size: 12.5px;
-    text-align: center;
-    border-top: 1px solid #ddd;
-  }
-
-  textarea#chat-input {
-    border: none;
+  .logo p {
+    float: inline-start;
+    margin: 10px 0 0 0;
     font-family: 'Source Sans Pro', sans-serif;
-    width: 100%;
-    height: 20px;
-    outline: none;
-    resize: none;
-  }
-
-  a#send-it {
-    color: #555;
-    width: 50px;
-    margin: -5px 0 0 5px;
     font-weight: 700;
-    padding: 8px;
-    background: #eee;
-    border-radius: 10px;
-  }
-
-  .first-msg {
-    background: #f5f5f5;
-    padding: 30px;
-    text-align: center;
-  }
-
-  .first-msg span {
-    background: #e2e2e2;
-    color: #333;
-    font-size: 14.2px;
-    line-height: 1.7;
-    border-radius: 10px;
-    padding: 15px 20px;
-    display: inline-block;
-  }
-
-  .start-chat .blanter-msg {
-    display: flex;
-  }
-
-  #get-number {
-    display: none;
-  }
-
-  a.close-chat {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    color: #fff;
     font-size: 30px;
   }
 
-  @keyframes showhide {
-    from {
-      transform: scale(0.5);
-      opacity: 0;
-    }
+
+
+/* for max-width 599px */
+@media screen and (max-width: 599px) {
+  .head {
+    width: 100%;
+    background-image: url("/assets/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  @keyframes showchat {
-    from {
-      transform: scale(0);
-      opacity: 0;
-    }
+  .head-container {
+    width: 100%;
   }
 
-  @media screen and (max-width: 480px) {
-    #whatsapp-chat {
-      width: auto;
-      left: 5%;
-      right: 5%;
-      font-size: 80%;
-    }
+  .logo {
+    display: flex;
+    margin-left: 20px;
   }
 
-  .hide {
+  .socials {
+    margin-right: 20px;
+  }
+
+  .socials ul li {
+    margin: auto;
+  }
+
+  .hero {
+    width: 100%;
+  }
+
+  .hero h1 {
+    color: #000000;
+  }
+
+  .hero a {
     display: none;
-    animation-name: showhide;
-    animation-duration: 1.5s;
-    transform: scale(1);
-    opacity: 1;
   }
 
-  .show {
-    display: block;
-    animation-name: showhide;
-    animation-duration: 1.5s;
-    transform: scale(1);
-    opacity: 1;
+  .services-container {
+    width: 100%;
   }
+
+  .services-block-box {
+    width: 60%;
+    margin: 0 auto 70px auto;
+  }
+
+  .services-block-box h3,
+  .serxices-block-box p {
+    display: block;
+  }
+
+  .services-block-box .fa-code {
+    margin-right: 25px;
+  }
+
+  .price-block {
+    margin-bottom: 90px;
+  }
+
+  .positioning-container {
+    margin: 0 auto 40px auto;
+  }
+
+  .team-block {
+    margin: 0 auto 60px auto;
+    border-bottom: 1px solid #696969;
+  }
+
+  .stats-container,
+  .customer-info,
+  .feedback-container,
+  .contacts-container,
+  .contacts-block,
+  .contact-form,
+  .footer,
+  .footer-container,
+  .textarea-positioning textarea,
+  .footer-form,
+  .footer-form form,
+  .footer-form form input[type="email"],
+  .footer-contacts,
+  .portfolio-container,
+  .team-block-container,
+  .price-block,
+  .pricing-container,
+  .data-container {
+    width: 100%;
+  }
+
+  .customer-quote,
+  .positioning-container,
+  .team-block {
+    width: 80%;
+  }
+
+  .contact-form input[type="email"],
+  .contact-form input[type="text"],
+  .contact-form input[type="submit"],
+  .contact-form input[type="checkbox"],
+  .textarea-positioning,
+  .contact-form form {
+    width: 85%;
+  }
+
+  .footer-form {
+    margin-bottom: 15px;
+    margin-bottom: 50px;
+  }
+
+  .footer-form form input[type="email"] {
+    margin-bottom: 10px;
+  }
+
+  .footer-form form input[type="email"],
+  .footer-form form input[type="submit"],
+  .contacts-block,
+  .footer-contacts,
+  .footer-nav,
+  .services-block-box,
+  .positioning-container,
+  .team-block {
+    display: block;
+  }
+
+  .footer-form form input[type="submit"] {
+    width: 50%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .footer-contacts {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-nav {
+    width: 96%;
+  }
+
+  .footer-nav ul {
+    width: 24%;
+    float: left;
+    height: auto;
+  }
+
+  .footer-nav ul li {
+    text-align: center;
+  }
+
+  .copyright p:first-child {
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+
+  #up-btn {
+    left: 80%;
+    bottom: 40%;
+  }
+}
+
+
+/* for max-width 920px */
+@media screen and (min-width: 600px) and (max-width: 950px) {
+  .head {
+    width: 100%;
+    background-image: url(/assets/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .head-container {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 50px;
+  }
+
+  .socials {
+    margin-right: 50px;
+  }
+
+  .hero,
+  .services-container {
+    width: 100%;
+  }
+
+  .hero h1 {
+    color: #000000;
+  }
+
+  .services-block-box {
+    width: 48%;
+    display: inline-block;
+    margin: 0 auto 70px auto;
+    padding-left: 80px;
+    box-sizing: border-box;
+  }
+
+  .services-block-box .fa {
+    display: block;
+  }
+
+  .services-block-box h3,
+  .services-block-box p {
+    display: block;
+  }
+
+  .services-block-box .fa-code {
+    margin-right: 25px;
+  }
+
+  .pricing-container,
+  .portfolio-container,
+  .team-block-container,
+  .data-container,
+  .stats-container,
+  .customer-info,
+  .feedback-container,
+  .contacts-container,
+  .contact-form,
+  .textarea-positioning textarea,
+  footer,
+  .footer-container,
+  .footer-form,
+  .footer-form form,
+  .footer-form form input[type="email"],
+  .footer-contacts {
+    width: 100%;
+  }
+
+  .positioning-container,
+  .team-block {
+    width: 48%;
+    display: inline-block;
+  }
+
+  .customer-quote {
+    width: 80%;
+  }
+
+  .contact-form input[type="email"],
+  .contact-form input[type="text"],
+  .contact-form input[type="submit"],
+  .contact-form input[type="checkbox"],
+  .contact-form form,
+  .textarea-positioning {
+    width: 85%;
+  }
+
+  .footer-form {
+    margin-bottom: 15px;
+    margin-bottom: 50px;
+  }
+
+  .footer-form form input[type="email"] {
+    margin-bottom: 10px;
+  }
+
+  .footer-form form input[type="email"],
+  .footer-form form input[type="submit"] {
+    display: block;
+  }
+
+  .footer-form form input[type="submit"] {
+    width: 40%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .footer-contacts {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .footer-nav {
+    display: block;
+    width: 55%;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .footer-nav ul {
+    width: 24%;
+    float: left;
+    height: auto;
+  }
+
+  .footer-nav ul li {
+    text-align: center;
+  }
+
+  .copyright p:first-child {
+    display: inline-block;
+    margin: 0 0 0 10px;
+  }
+
+  #up-btn {
+    left: 80%;
+    bottom: 40%;
+  }
+}
+
+/* CLASES DE CARDS */
+
+.card_img {
+  width: 90%;
+  align-self: center;
+  padding-top: 1%;
+}
+
+.card_precio {
+  padding-top: 5%;
+}
+
+.card_precioColor {
+  background-color: white;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  font-weight: bolder;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+/* ESTILOS DE WHATS APP */
+
+#whatsapp-chat {
+  position: fixed;
+  background: #fff;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+  bottom: 90px;
+  right: 30px;
+  overflow: hidden;
+  z-index: 99;
+  animation-name: showchat;
+  animation-duration: 1s;
+  transform: scale(1);
+}
+
+a.blantershow-chat {
+  background: #fff;
+  color: #404040;
+  position: fixed;
+  display: flex;
+  font-weight: 400;
+  justify-content: space-between;
+  z-index: 98;
+  bottom: 25px;
+  right: 30px;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 0 1px 15px rgba(32, 33, 36, 0.28);
+}
+
+a.blantershow-chat svg {
+  transform: scale(1.2);
+  margin: 0 10px 0 0;
+}
+
+.header-chat {
+  background: #095e54;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-chat h3 {
+  margin: 0 0 10px;
+}
+
+.header-chat p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.info-avatar {
+  position: relative;
+}
+
+.info-avatar img {
+  border-radius: 100%;
+  width: 50px;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.info-chat span {
+  display: block;
+}
+
+#get-label,
+span.chat-label {
+  font-size: 12px;
+  color: #888;
+}
+
+#get-nama,
+span.chat-nama {
+  margin: 5px 0 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+#get-label,
+#get-nama {
+  color: #fff;
+}
+
+span.my-number {
+  display: none;
+}
+
+.blanter-msg {
+  color: #444;
+  padding: 20px;
+  font-size: 12.5px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+textarea#chat-input {
+  border: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100%;
+  height: 20px;
+  outline: none;
+  resize: none;
+}
+
+a#send-it {
+  color: #555;
+  width: 50px;
+  margin: -5px 0 0 5px;
+  font-weight: 700;
+  padding: 8px;
+  background: #eee;
+  border-radius: 10px;
+}
+
+.first-msg {
+  background: #f5f5f5;
+  padding: 30px;
+  text-align: center;
+}
+
+.first-msg span {
+  background: #e2e2e2;
+  color: #333;
+  font-size: 14.2px;
+  line-height: 1.7;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: inline-block;
+}
+
+.start-chat .blanter-msg {
+  display: flex;
+}
+
+#get-number {
+  display: none;
+}
+
+a.close-chat {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #fff;
+  font-size: 30px;
+}
+
+@keyframes showhide {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes showchat {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #whatsapp-chat {
+    width: auto;
+    left: 5%;
+    right: 5%;
+    font-size: 80%;
+  }
+}
+
+.hide {
+  display: none;
+  animation-name: showhide;
+  animation-duration: 1.5s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.show {
+  display: block;
+  animation-name: showhide;
+  animation-duration: 1.5s;
+  transform: scale(1);
+  opacity: 1;
+}
