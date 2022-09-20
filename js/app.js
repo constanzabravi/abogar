@@ -41,6 +41,67 @@ const listadoProdCarrito = document.getElementById("listaProdCarrito");
 const btnCarrito = document.getElementById("btnCarrito");
 const btnComprar = document.getElementById("btnComprar");
 
+// DESAFIO DE FETCH 
+// DOM - funcion para generar cards y guardarlas
+const generarTarjetas = async () => {
+    const respuesta = await
+        fetch('../js/datos.json')
+    const data = await respuesta.json()
+    data.forEach(element => {
+        const div = document.createElement('div');
+        div.innerHTML = `
+        <div class="card h-100 w-100 col bg-dark border-secondary text-white">
+           <div class="d-flex justify-content-between card-body card_precio">
+               <div >
+                   <label id="${element.id}-precio" class=" card_precioColor">$${element.precio}</label>
+               </div>
+           </div>
+         <img src="${element.imagen}" class="card_img" width="200" height="200" alt="...">
+           <div class="card-body">
+             <h5 class="card-title" id="${element.id}-producto">${element.nombre}</h5>
+             <p class="card-text" id="descripcion">${element.descripcion}</p>
+             <div class="row g-3">
+               <div class="col-sm-7">
+                 <input type="number" id="${element.id}-cantidad" min="1" step="1" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
+               </div>
+               <div class="col-sm">
+                   <button type="submit" id="${element.id}" name="btnAgregar"  class="btn btn-light">Agregar</button>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>`;
+        tarjeta.append(div);
+
+        //guardo cada elemento en la lista
+        listaProductos.push(element.nombre = new Producto(element.id, element.nombre, element.categoria, element.descripcion, element.imagen, element.precio, element.cantidad))
+
+        //Boton y eventos para cuando se elige un producto o no se selecciona ninguno
+        const btnAgregar = document.getElementById(element.id);
+        btnAgregar.addEventListener("click", clickBtnAgregar = (e) => {
+            e.preventDefault();
+            let dato = e.target;
+            let cantidad = document.getElementById(dato.id + "-cantidad");
+            if (cantidad.value != null && cantidad.value > 0 && cantidad != undefined) {
+                seleccionProductos(dato.id, cantidad.value)
+                cantidad.value = "";
+                Swal.fire({
+                    position: 'top-center',
+                    icon: 'success',
+                    title: `El servicio se agrego al carrito`,
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+            }
+            else {
+                Swal.fire('Ingrese un numero mayor a cero para agregar el producto')
+            }
+        });
+    })
+}
+
+generarTarjetas();
+
 // ***DESAFIO DE OPERADORES AVANZADOS***
 // Desestructurar el objeto producto, uso del session storage que devuelve con el stringify
 const desestructurar = (item) => {
@@ -53,7 +114,6 @@ function agregarProdSessionStorage(prods) {
     }
 
 }
-
 
 function obtenerCompraSessionStorage() {
     let productos = [];
@@ -92,11 +152,8 @@ function seleccionProductos(producto, cantidad) {
     return productoNuevo;
 }
 
-
-
 //instanciar el carrito 
 const carrito = new Carrito(1, lista = [], 0);
-
 btnCarrito.addEventListener("click", clickBtnCarrito = (e) => {
     //obtener productos del session storage
     const productosComprar = obtenerCompraSessionStorage();
@@ -125,10 +182,7 @@ btnCarrito.addEventListener("click", clickBtnCarrito = (e) => {
     listadoProdCarrito.append(divTotal);
 });
 
-
-
 // boton y evento del modal del carrito cuando se selecciona comprar o cancelar
-
 const compraConfirmacion = btnComprar.addEventListener("click", () => {
     if (listadoProdCarrito.children.length > 1) {
         Swal.fire({
@@ -155,80 +209,10 @@ const compraConfirmacion = btnComprar.addEventListener("click", () => {
 
 })
 
-
-// DESAFIO DE FETCH 
-// DOM - funcion para generar cards y guardarlas
-const generarTarjetas = async () => {
-    const respuesta = await
-        fetch('../js/datos.json')
-    const data = await respuesta.json()
-    data.forEach(element => {
-        const div = document.createElement('div');
-        div.innerHTML = `
-        <div class="card h-100 w-100 col bg-dark border-secondary text-white">
-           <div class="d-flex justify-content-between card-body card_precio">
-               <div >
-                   <label id="${element.id}-precio" class=" card_precioColor">$${element.precio}</label>
-               </div>
-           </div>
-           <img src="${element.imagen}" class="card_img" width="200" height="200" alt="...">
-           <div class="card-body">
-             <h5 class="card-title" id="${element.id}-producto">${element.nombre}</h5>
-             <p class="card-text" id="descripcion">${element.descripcion}</p>
-             <div class="row g-3">
-               <div class="col-sm-7">
-                 <input type="number" id="${element.id}-cantidad" min="1" step="1" class="form-control" placeholder="Cantidad" aria-label="Cantidad">
-               </div>
-               <div class="col-sm">
-                   <button type="submit" id="${element.id}" name="btnAgregar"  class="btn btn-light">Agregar</button>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>`;
-        tarjeta.append(div);
-
-
-
-        //guardo cada elemento en la lista
-        listaProductos.push(element.nombre = new Producto(element.id, element.nombre, element.categoria, element.descripcion, element.imagen, element.precio, element.cantidad))
-
-
-        //Boton y eventos para cuando se elige un producto o no se selecciona ninguno
-        const btnAgregar = document.getElementById(element.id);
-        btnAgregar.addEventListener("click", clickBtnAgregar = (e) => {
-            e.preventDefault();
-            let dato = e.target;
-            let cantidad = document.getElementById(dato.id + "-cantidad");
-            if (cantidad.value != null && cantidad.value > 0 && cantidad != undefined) {
-                seleccionProductos(dato.id, cantidad.value)
-                cantidad.value = "";
-                Swal.fire({
-                    position: 'top-center',
-                    icon: 'success',
-                    title: `El servicio se agrego al carrito`,
-                    showConfirmButton: false,
-                    timer: 1500
-                })
-            }
-            else {
-                Swal.fire('Ingrese un numero mayor a cero para agregar el producto')
-            }
-
-
-        });
-    })
-}
-
-generarTarjetas();
-
-
 // Eliminar listado y session storage de carrito
-
 function eliminarListado() {
     sessionStorage.clear();
     listado = []
 }
-
 const btnEliminar = document.getElementById("btnEliminar");
 btnEliminar.addEventListener('click', () => { eliminarListado() })

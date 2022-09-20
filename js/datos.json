@@ -1,112 +1,110 @@
 [
-   
     {
-        "id":1,
+        "id": 1,
         "nombre": "Violencia de Género SIN CARGO",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Redacción, asesoramiento y gestión de violencia de género de todo tipo y ambiente, impedimento de contacto, orden de restricción. ¿Es urgente? Contactanos al 2682848193 o por What's Up.",
-        "imagen":"../assets/violencia.jpg",
-        "precio":0,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Redacción, asesoramiento y gestión de violencia de género de todo tipo y ambiente, impedimento de contacto, orden de restricción. ¿Es urgente? Contactanos al 2682848193 o por What's Up.",
+        "imagen": "../assets/violencia.jpg",
+        "precio": 0,
+        "cantidad": 0
     },
     {
-        "id":2,
-        "nombre":"Contratos",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Servicio de redacción, gestión y asesoramiento de contratos de alquiler, compra-venta, cesión de derechos, locación de obra y servicios, permuta, prenda, donación, mutuo, comodato, etc.",
-        "imagen":"../assets/contratos.jpg",
-        "precio":1000,
-        "cantidad":0
+        "id": 2,
+        "nombre": "Contratos",
+        "categoria": "Servicio jurídico",
+        "descripcion": "Servicio de redacción, gestión y asesoramiento de contratos de alquiler, compra-venta, cesión de derechos, locación de obra y servicios, permuta, prenda, donación, mutuo, comodato, etc.",
+        "imagen": "../assets/contratos.jpg",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":3,
-        "nombre":"Redacción de testamentos",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Asesoramiento y redacción de testamento, bienes y destino de los mismos. Revisión y/o modificación y/o revocación del testamento vigente y actualización en caso de ser necesario.",
-        "imagen":"../assets/testamento.jpg",
-        "precio":1500,
-        "cantidad":0
+        "id": 3,
+        "nombre": "Redacción de testamentos",
+        "categoria": "Servicio jurídico",
+        "descripcion": "Asesoramiento y redacción de testamento, bienes y destino de los mismos. Revisión y/o modificación y/o revocación del testamento vigente y actualización en caso de ser necesario.",
+        "imagen": "../assets/testamento.jpg",
+        "precio": 1500,
+        "cantidad": 0
     },
     {
-        "id":4,
+        "id": 4,
         "nombre": "Startups-Redacción de bases y condiciones",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Estudio de la naturaleza jurídica del emprendimiento, comercialización, sistema de envíos, procesamiento de pagos y público. Solución anticipada de supuestos de conflictos (denuncias y sanciones).",
-        "imagen":"../assets/startup.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Estudio de la naturaleza jurídica del emprendimiento, comercialización, sistema de envíos, procesamiento de pagos y público. Solución anticipada de supuestos de conflictos (denuncias y sanciones).",
+        "imagen": "../assets/startup.jpg",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":5,
+        "id": 5,
         "nombre": "Administración de Consorcios",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Consultoría, outsourcing y gestión legal descentralizada para los asuntos legales de los edificios o barrios para administradores de consorcio, o empresas dedicadas a dicha labor.",
-        "imagen":"../assets/consorcio.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Consultoría, outsourcing y gestión legal descentralizada para los asuntos legales de los edificios o barrios para administradores de consorcio, o empresas dedicadas a dicha labor.",
+        "imagen": "../assets/consorcio.jpg",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":6,
+        "id": 6,
         "nombre": "Constitui tu sociedad",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Formación o regularización de sociedades en funcionamiento. Cotización a precio final de la contitución de la misma. Redacción y asesoramiento posterior.",
-        "imagen":"../assets/sociedades.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio ajurídico",
+        "descripcion": "Formación o regularización de sociedades en funcionamiento. Cotización a precio final de la contitución de la misma. Redacción y asesoramiento posterior.",
+        "imagen": "../assets/sociedades.png",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":7,
+        "id": 7,
         "nombre": "Demanda/Contestación de demanda",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Redacción, gestión y asesoramiento de demandas y contestaciones de derecho civil y comercial. Seguimiento posterior del caso.",
-        "imagen":"../assets/demanda.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Redacción, gestión y asesoramiento de demandas y contestaciones de derecho civil y comercial. Seguimiento posterior del caso.",
+        "imagen": "../assets/demanda.png",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":8,
+        "id": 8,
         "nombre": "Sucesión ab-intestato y con testamento",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Gestión, asesoramiento y redacción de escritos en situaciones sin testamento o cuando el mismo es nulo, o con el mismo)",
-        "imagen":"../assets/sucesion.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Gestión, asesoramiento y redacción de escritos en situaciones sin testamento o cuando el mismo es nulo, o con el mismo)",
+        "imagen": "../assets/sucesion.jpg",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":9,
+        "id": 9,
         "nombre": "Daños y Perjuicios",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Redacción, asesoramiento y gestión de casos sobre: Accidentes laborales y de tránsito, Daños a terceros, Mala praxis, ART, Ruidos Molestos, etc.",
-        "imagen":"../assets/accidente.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Redacción, asesoramiento y gestión de casos sobre: Accidentes laborales y de tránsito, Daños a terceros, Mala praxis, ART, Ruidos Molestos, etc.",
+        "imagen": "../assets/accidente.png",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":10,
-        "nombre":"Divorcio de común acuerdo",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Gestión y redacción de divorcio de común acuerdo. No incluye acuerdos por régimen de tenencia y/o visitas de hijos comunes, animales de compañía, tampoco división de bienes materiales sean muebles o inmuebles.",
-        "imagen":"../assets/divorcio.jpg",
-        "precio":10000,
-        "cantidad":0
+        "id": 10,
+        "nombre": "Divorcio de común acuerdo",
+        "categoria": "Servicio jurídico",
+        "descripcion": "Gestión y redacción de divorcio de común acuerdo. No incluye acuerdos por régimen de tenencia y/o visitas de hijos comunes, animales de compañía, tampoco división de bienes materiales sean muebles o inmuebles.",
+        "imagen": "../assets/divorcio.jpg",
+        "precio": 10000,
+        "cantidad": 0
     },
     {
-        "id":11,
+        "id": 11,
         "nombre": "Pack de Página Web + Constitución de StartUp",
-        "categoria":"Servicio jurídico",
-        "descripcion":"Constitución jurídica de tu emprendimiento, asesoramiento jurídico y armado de página web para que des tus primeros pasos en el mundo de los negocios.",
-        "imagen":"../assets/pack.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio jurídico",
+        "descripcion": "Constitución jurídica de tu emprendimiento, asesoramiento jurídico y armado de página web para que des tus primeros pasos en el mundo de los negocios.",
+        "imagen": "../assets/pack.png",
+        "precio": 1000,
+        "cantidad": 0
     },
     {
-        "id":12,
+        "id": 12,
         "nombre": "Página Web de tu emprendimiento",
-        "categoria":"Servicio de Desarrollo Web",
-        "descripcion":"Armado de página web de tu empresa o emprendimiento. Gestión legal y asesoramiento posterior.",
-        "imagen":"../assets/paginaweb.jpg",
-        "precio":1000,
-        "cantidad":0
+        "categoria": "Servicio de Desarrollo Web",
+        "descripcion": "Armado de página web de tu empresa o emprendimiento. Gestión legal y asesoramiento posterior.",
+        "imagen": "../assets/paginaweb.png",
+        "precio": 1000,
+        "cantidad": 0
     }
-
 ]
