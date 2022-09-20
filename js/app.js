@@ -192,7 +192,7 @@ const compraConfirmacion = btnComprar.addEventListener("click", () => {
             denyButtonText: "Cancelar",
         }).then((result) => {
             if (result.isConfirmed) {
-                Swal.fire('Compra realizada con éxito', 'Gracias por confiar con nosotros', 'success');
+                Swal.fire('Compra realizada con éxito ¡Gracias!' , 'Comuníquese al 2613434331 para coordinar una videoconferencia', 'success');
                 eliminarListado();
             } else if (result.isDenied) {
                 Swal.fire({
