@@ -66,7 +66,7 @@
         "id": 8,
         "nombre": "Sucesión ab-intestato y con testamento",
         "categoria": "Servicio jurídico",
-        "descripcion": "Gestión, asesoramiento y redacción de escritos en situaciones con testamento, sin testamento o cuando el mismo es nulo",
+        "descripcion": "Gestión, asesoramiento y redacción de escritos en situaciones con testamento, sin testamento o cuando el mismo es nulo.",
         "imagen": "../assets/sucesion.jpg",
         "precio": 1000,
         "cantidad": 0
